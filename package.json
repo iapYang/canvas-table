@@ -1,0 +1,26 @@
+{
+  "name": "canvas-table",
+  "version": "0.0.0",
+  "description": "which is like google-table",
+  "main": "index.js",
+  "scripts": {
+    "cli": "iapvt cli -r -s",
+    "dev": "iapvt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://iapyang@github.com/iapYang/canvas-table.git"
+  },
+  "author": "iapyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iapYang/canvas-table/issues"
+  },
+  "homepage": "https://github.com/iapYang/canvas-table#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.1",
+    "eslint-plugin-html": "^3.2.1",
+    "iapyang-vue-template": "^0.6.3"
+  }
+}
