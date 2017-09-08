@@ -1,3 +1,6 @@
 {
-    "extends": "./node_modules/iapyang-vue-template/.eslintrc"
+    "extends": "./node_modules/iapyang-vue-template/.eslintrc",
+    "rules": {
+        "no-underscore-dangle": 0
+    }
 }
