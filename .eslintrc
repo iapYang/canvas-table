@@ -2,6 +2,7 @@
     "extends": "./node_modules/iapyang-vue-template/.eslintrc",
     "rules": {
         "no-underscore-dangle": 0,
-        "prefer-rest-params": 0
+        "prefer-rest-params": 0,
+        "no-plusplus": 0
     }
 }
