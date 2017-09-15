@@ -14,7 +14,6 @@ export default class {
     }
     fireEvent(eventName, ...rest) {
         const event = this.eventList.find(event => event.name === eventName);
-        event.callback.apply(this, 
-            rest);
+        event.callback.apply(this, rest);
     }
 }
