@@ -10,8 +10,8 @@ export default class {
         ctx,
     }) {
         this.startPoint = new Point({x, y});
-        this.width = width || 60;
-        this.height = height || 10;
+        this.width = width || 120;
+        this.height = height || 20;
         this.hasBorder = true;
         this.ctx = ctx;
     }

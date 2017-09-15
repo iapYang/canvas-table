@@ -12,21 +12,27 @@ export default class extends OB {
         this._initDefaultData();
         this.tableStructure = this._buildTdStructure();
 
-        this._setCanvasStyle({
-            width: this._calacWidth(),
-            height: this._calacHeight(),
-        });
-
-        this.canvas.width = this._calacWidth();
-        this.canvas.height = this._calacHeight();
+        this._changeCanvasSize();
         
         this.render();
 
         this._addEventListener();
     }
     _initDefaultData() {
-        this.tableRows = 20;
-        this.tableCols = 20;
+        this.tableRows = 200;
+        this.tableCols = 200;
+    }
+    _changeCanvasSize() {
+        const width = this._calacWidth();
+        const height = this._calacHeight();
+
+        this._setCanvasStyle({
+            width: `${width}px`,
+            height: `${height}px`,
+        });
+
+        this.canvas.width = width;
+        this.canvas.height = height;
     }
     _calacWidth() {
         let width = 0;
