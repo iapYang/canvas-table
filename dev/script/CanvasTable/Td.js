@@ -7,11 +7,18 @@ export default class {
         width,
         height,
         hasBorder,
+        ctx,
     }) {
         this.startPoint = new Point({x, y});
-        this.width = width || 40;
-        this.height = height || 20;
+        this.width = width || 60;
+        this.height = height || 10;
         this.hasBorder = true;
+        this.ctx = ctx;
+    }
+    render() {
+        this.ctx.save();
+        this.ctx.strokeRect(this.startPoint.getX(), this.startPoint.getY(), this.width, this.height);
+        this.ctx.restore();
     }
     getWidth() {
         return this.width;
