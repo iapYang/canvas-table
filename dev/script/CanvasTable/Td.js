@@ -1,13 +1,28 @@
 import Point from './Point';
 
 export default class {
-    constructor() {
-        console.log('this is td');
-        new Point({
-            x: 1,
-            y: 1,
-            width: 20,
-            height: 20,
-        });
+    constructor({
+        x,
+        y,
+        width,
+        height,
+        hasBorder,
+    }) {
+        this.startPoint = new Point({x, y});
+        this.width = width || 40;
+        this.height = height || 20;
+        this.hasBorder = true;
+    }
+    getWidth() {
+        return this.width;
+    }
+    getHeight() {
+        return this.height;
+    }
+    getX() {
+        return this.startPoint.getX();
+    }
+    getY() {
+        return this.startPoint.getY();
     }
 }
