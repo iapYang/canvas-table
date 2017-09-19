@@ -17,6 +17,7 @@ export default class {
     }
     render() {
         this.ctx.save();
+        this.ctx.clearRect(this.startPoint.getX(), this.startPoint.getY(), this.width, this.height);
         this.ctx.strokeRect(this.startPoint.getX(), this.startPoint.getY(), this.width, this.height);
         this.ctx.restore();
     }

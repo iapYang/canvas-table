@@ -25,10 +25,11 @@ export default class extends OB {
     _changeCanvasSize() {
         const width = this._calacWidth();
         const height = this._calacHeight();
+        const ratio = 1.2;
 
         this._setCanvasStyle({
-            width: `${width}px`,
-            height: `${height}px`,
+            width: `${width / ratio}px`,
+            height: `${height / ratio}px`,
         });
 
         this.canvas.width = width;
